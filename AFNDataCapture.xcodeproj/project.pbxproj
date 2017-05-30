@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525D29E877A0E780A99C86B7 /* Pods_AFNDataCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01EC17658740003A1F1ACF6 /* Pods_AFNDataCapture.framework */; };
 		845E1B251EDDB35300A2CE07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E1B241EDDB35300A2CE07 /* main.m */; };
 		845E1B281EDDB35300A2CE07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E1B271EDDB35300A2CE07 /* AppDelegate.m */; };
 		845E1B2B1EDDB35300A2CE07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E1B2A1EDDB35300A2CE07 /* ViewController.m */; };
@@ -26,6 +27,9 @@
 		845E1B2F1EDDB35300A2CE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845E1B321EDDB35300A2CE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845E1B341EDDB35300A2CE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47AEAF054101007512F4A26 /* Pods-AFNDataCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNDataCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFNDataCapture/Pods-AFNDataCapture.release.xcconfig"; sourceTree = "<group>"; };
+		B01EC17658740003A1F1ACF6 /* Pods_AFNDataCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNDataCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1535F8DCE8FE4DF9378A3E8 /* Pods-AFNDataCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNDataCapture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFNDataCapture/Pods-AFNDataCapture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525D29E877A0E780A99C86B7 /* Pods_AFNDataCapture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64E4C63CD171CD59BE1876F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1535F8DCE8FE4DF9378A3E8 /* Pods-AFNDataCapture.debug.xcconfig */,
+				A47AEAF054101007512F4A26 /* Pods-AFNDataCapture.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		759B27B1E2BED8AD27D19EE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B01EC17658740003A1F1ACF6 /* Pods_AFNDataCapture.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		845E1B171EDDB35200A2CE07 = {
 			isa = PBXGroup;
 			children = (
 				845E1B221EDDB35300A2CE07 /* AFNDataCapture */,
 				845E1B211EDDB35200A2CE07 /* Products */,
+				64E4C63CD171CD59BE1876F9 /* Pods */,
+				759B27B1E2BED8AD27D19EE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 845E1B371EDDB35300A2CE07 /* Build configuration list for PBXNativeTarget "AFNDataCapture" */;
 			buildPhases = (
+				B0AFFA11103AB28524723F11 /* [CP] Check Pods Manifest.lock */,
 				845E1B1C1EDDB35200A2CE07 /* Sources */,
 				845E1B1D1EDDB35200A2CE07 /* Frameworks */,
 				845E1B1E1EDDB35200A2CE07 /* Resources */,
+				6E03B3D91978ACD4F9CF5657 /* [CP] Embed Pods Frameworks */,
+				7AECE4E27BFAA84543331257 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E03B3D91978ACD4F9CF5657 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFNDataCapture/Pods-AFNDataCapture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AECE4E27BFAA84543331257 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFNDataCapture/Pods-AFNDataCapture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0AFFA11103AB28524723F11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		845E1B1C1EDDB35200A2CE07 /* Sources */ = {
@@ -270,6 +345,7 @@
 		};
 		845E1B381EDDB35300A2CE07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1535F8DCE8FE4DF9378A3E8 /* Pods-AFNDataCapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AFNDataCapture/Info.plist;
@@ -281,6 +357,7 @@
 		};
 		845E1B391EDDB35300A2CE07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47AEAF054101007512F4A26 /* Pods-AFNDataCapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AFNDataCapture/Info.plist;
